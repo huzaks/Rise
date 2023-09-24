@@ -1,7 +1,6 @@
 "use client"
 import { buttonVariants } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
