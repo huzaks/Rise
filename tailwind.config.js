@@ -16,7 +16,6 @@ module.exports = {
       },
     },
     extend: {
-
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -52,10 +51,14 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundSize: {
+        '200%': '400%'
       },
       keyframes: {
         "accordion-down": {
@@ -66,11 +69,19 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "arrow": {
+          from: {opacity: 0, transform: "translateX(50%)"},
+          to: {opacity: 100, transform: "translateX(100%)"}
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "arrow": "arrow 0.15s linear"
       },
+      transitionProperty: {
+        'scale': 'scale'
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

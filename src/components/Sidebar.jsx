@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import logo from "@/app/risewhite.png";
+import logo1 from '@/app/rise_logo_wite.png'
 import { GiHockey, GiSoccerBall } from "react-icons/gi";
 import { IoHome } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
@@ -13,9 +14,9 @@ export default function Sidebar() {
   const pathname = usePathname();
   return (
     <>
-      <nav className="relative p-4 min-h-[100vh] w-64 bg-[#00061d] flex flex-col gap-4">
-        <Link href={"/"} className="text-5xl font-bold">
-          <Image src={logo} alt="Logo Rise" className="" />
+      <nav className="hidden md:flex relative p-4 min-h-[100vh] w-64 bg-gradient-to-t from-[#00061d] to-[#000c3b] flex-col gap-4">
+        <Link href={"/"}>
+          <Image src={logo1} alt="Logo Rise"/>
         </Link>
         <div className="flex flex-col text-white text-sm gap-1">
           Général
