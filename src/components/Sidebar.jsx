@@ -17,7 +17,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import { Switch } from "@/components/ui/switch"
+import { Switch } from "@/components/ui/switch";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -68,23 +68,18 @@ export default function Sidebar() {
         </div>
 
         <div className="absolute bottom-4 flex flex-col text-white text-sm gap-6">
-          <Dialog>
-            <DialogTrigger className="font-semibold rounded-sm px-2 text-lg flex gap-2 items-center mt-1"><FiSettings />
-            Réglages</DialogTrigger>
-            <DialogContent>
-              <DialogHeader>
-                <DialogTitle>Modification du profil</DialogTitle>
-                <DialogDescription>
-                  <label className="flex items-center gap-2">
-                    Visibilité des statistiques (Publique)
-                  <Switch />
-                  </label>
-
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
-          </Dialog>
           
+          <Link
+            href={"/reglages"}
+            className={`font-semibold rounded-sm px-2 text-lg flex gap-2 items-center mt-1 ${
+              pathname.includes("reglages")
+                ? "bg-slate-200/[.30]"
+                : "text-white hover:bg-slate-200/[.30] transition-all"
+            }`}
+          >
+            <FiSettings />
+            Réglages
+          </Link>
           <div className="flex gap-2">
             <Avatar>
               <AvatarImage src="https://github.com/shadcn.png" />

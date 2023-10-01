@@ -66,7 +66,7 @@ export default function MenuMD() {
           <DropdownMenuLabel>Personnel</DropdownMenuLabel>
           <DropdownMenuItem>
           <Link
-              href={"/settings"}
+              href={"/reglages"}
               className='font-semibold  flex gap-2 items-center text-[#000c3b] '
             >
               <FiSettings />
