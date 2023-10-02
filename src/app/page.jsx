@@ -16,7 +16,7 @@ import {
 export default function Home() {
   return (
     <div className="flex flex-col mx-auto items-center justify-center w-[90%] max-w-xl gap-16 px-4 lg:flex-row min-h-[100vh]">
-      <div className="flex flex-col order-2 lg:order-1 items-center"> {/* MARC retire items-center */}
+      <div className="flex flex-col order-2 lg:order-1"> {/* MARC retire items-center */}
         <h1 className="font-bold text-5xl text-transparent bg-gradient-to-l from-[#4a578b] to-[#000c3b] bg-clip-text self-start">
           Bienvenue chez
         </h1>
