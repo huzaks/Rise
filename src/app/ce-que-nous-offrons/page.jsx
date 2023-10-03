@@ -14,11 +14,14 @@ export default function page(){
 
  return (
   
-    <div className="flex flex-col items-center justify-center gap-16 px-4 lg:flex-row h-[150vh] md:h-[100vh]">
+    <div className="flex flex-col mx-auto items-center justify-center gap-16 px-4 lg:flex-row h-[150vh] md:h-[100vh]">
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 h-[100%] md:h-[60%]">
         <Card className="relative p-4">
           <CardHeader>
-            <CardTitle className='text-center'>9 $/an</CardTitle>
+          <CardTitle className='flex justify-center'><h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-full after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
+          9 $/an
+          </h3></CardTitle>
           </CardHeader>
           <CardContent className='pt-8'>
             <div className="flex flex-col gap-16">
@@ -39,7 +42,9 @@ export default function page(){
         </Card>
         <Card className="relative p-4">
           <CardHeader>
-          <CardTitle className='text-center'>99 $/an</CardTitle>
+          <CardTitle className='flex justify-center'><h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-full after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
+          99 $/an
+          </h3></CardTitle>
           </CardHeader>
           <CardContent className='pt-8'>
             <div className="flex flex-col gap-16">
@@ -60,7 +65,11 @@ export default function page(){
         </Card>
         <Card className="relative border-4 border-[#000c3b] p-4 ">
           <CardHeader>
-          <CardTitle className='text-center'>999 $/an</CardTitle>
+          <CardTitle className='flex justify-center'>
+          <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-full after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
+          999 $/an
+          </h3>
+          </CardTitle>
           </CardHeader>
           <CardContent className='pt-8'>
             <div className="flex flex-col gap-16">
