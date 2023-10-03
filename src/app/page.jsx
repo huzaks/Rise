@@ -22,13 +22,13 @@ export default function Home() {
             className="
         bg-[#000c3b] hover:bg-[#00061d] border-4 border-[#000c3b] hover:border-[#00061d] text-white rounded-[50px] py-2 px-8 text-lg md:text-xl font-bold items-center justify-center transition-all w-fit"
           >
-            Plus d&apos;informations!
+            Plus d&apos;informations !
           </Link>
           <Link
             href={"/"}
             className="hover:bg-[#000c3b] border-4 border-[#000c3b] text-[#000c3b] hover:text-white rounded-[50px] py-2 px-8 text-lg text-center md:text-xl font-bold items-center justify-center transition-all w-fit"
           >
-            J&apos;embarque dans l&apos;aventure!
+            J&apos;embarque dans l&apos;aventure !
           </Link>
         </div>
       </div>
