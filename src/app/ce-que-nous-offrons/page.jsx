@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FiArrowLeft } from "react-icons/fi";
 export default function page() {
   return (
-    <div className="relative flex flex-col mx-auto items-center gap-4 justify-center  min-h-[100vh]">
+    <div className="relative flex flex-col mx-auto items-center gap-8 justify-center  min-h-[100vh]">
       <div className="pl-4 pt-4 md:pt-0 w-fit mt-28 mb-8 self-start">
         <Link
           href={"/ringuette"}
@@ -13,8 +13,8 @@ export default function page() {
           Retour
         </Link>
       </div>
-      <div className=" gap-16 px-4 lg:flex-row ">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 h-[100%] md:h-[60%]">
+      <div className=" gap-16 px-4 lg:flex-row">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 h-[100%] md:h-[500px]">
           <Card className="relative p-4">
             <CardHeader>
               <CardTitle className="flex justify-center">
