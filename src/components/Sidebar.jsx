@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import logo from "@/app/rise_logo_white-2.png";
-import { GiHockey, GiSoccerBall } from "react-icons/gi";
+import { GiHockey, GiSoccerBall, GiRing } from "react-icons/gi";
 import { IoHome } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
+import {FaRing, FaBaseballBatBall} from 'react-icons/fa6'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {CgNotes} from 'react-icons/cg'
 import {
   Dialog,
   DialogContent,
@@ -65,10 +67,44 @@ export default function Sidebar() {
             <GiSoccerBall />
             Soccer
           </Link>
+          <Link
+            href={"/baseball"}
+            className={`font-semibold rounded-sm px-2 text-lg flex gap-2 items-center mt-1 ${
+              pathname.includes("baseball")
+                ? "bg-slate-200/[.30]"
+                : "text-white hover:bg-slate-200/[.30] transition-all"
+            }`}
+          >
+            <FaBaseballBatBall />
+            Baseball
+          </Link>
+          <Link
+            href={"/ringuette"}
+            className={`font-semibold rounded-sm px-2 text-lg flex gap-2 items-center mt-1 ${
+              pathname.includes("ringuette")
+                ? "bg-slate-200/[.30]"
+                : "text-white hover:bg-slate-200/[.30] transition-all"
+            }`}
+          >
+            <GiRing />
+            Ringuette
+          </Link>
         </div>
 
         <div className="absolute bottom-4 flex flex-col text-white text-sm gap-6">
           
+          <div className="flex flex-col text-white text-sm gap-1">
+          <Link
+            href={"/assurances"}
+            className={`font-semibold rounded-sm px-2 text-lg flex gap-2 items-center mt-1 ${
+              pathname.includes("reglages")
+                ? "bg-slate-200/[.30]"
+                : "text-white hover:bg-slate-200/[.30] transition-all"
+            }`}
+          >
+            <CgNotes />
+            Assurances
+          </Link>
           <Link
             href={"/reglages"}
             className={`font-semibold rounded-sm px-2 text-lg flex gap-2 items-center mt-1 ${
@@ -80,6 +116,7 @@ export default function Sidebar() {
             <FiSettings />
             Réglages
           </Link>
+          </div>
           <div className="flex gap-2">
             <Avatar>
               <AvatarImage src="https://github.com/shadcn.png" />

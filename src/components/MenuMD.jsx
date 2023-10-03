@@ -5,10 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/app/rise_logo_white-2.png";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
-import { GiHockey, GiSoccerBall } from "react-icons/gi";
+import { GiHockey, GiSoccerBall, GiRing } from "react-icons/gi";
 import { IoHome } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
-import { RxAvatar } from "react-icons/rx";
+import {FaRing, FaBaseballBatBall} from 'react-icons/fa6'
+import {CgNotes} from 'react-icons/cg'
 
 import {
   DropdownMenu,
@@ -62,8 +63,35 @@ export default function MenuMD() {
               Soccer
             </Link>
           </DropdownMenuItem>
+          <DropdownMenuItem>
+          <Link
+              href={"/baseball"}
+              className='font-semibold  flex gap-2 items-center text-[#000c3b] '
+            >
+              <FaBaseballBatBall />
+              Baseball
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+          <Link
+              href={"/ringuette"}
+              className='font-semibold  flex gap-2 items-center text-[#000c3b] '
+            >
+              <GiRing />
+              Ringuette
+            </Link>
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuLabel>Personnel</DropdownMenuLabel>
+          <DropdownMenuItem>
+          <Link
+              href={"/assurances"}
+              className='font-semibold  flex gap-2 items-center text-[#000c3b] '
+            >
+              <CgNotes />
+              Assurances
+            </Link>
+          </DropdownMenuItem>
           <DropdownMenuItem>
           <Link
               href={"/reglages"}

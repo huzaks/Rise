@@ -44,9 +44,9 @@ export default function page() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>#</TableHead>
-              <TableHead>Nom du joueur</TableHead>
-              <TableHead>Position</TableHead>
+              <TableHead className="text-[#000c3b]">Numéro</TableHead>
+              <TableHead className="text-[#000c3b]">Nom du joueur</TableHead>
+              <TableHead className="text-[#000c3b]">Position</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>

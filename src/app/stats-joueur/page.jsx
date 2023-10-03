@@ -45,7 +45,7 @@ export default function page() {
           </div>
           
         </div>
-        <Tabs defaultValue="actuelle" className="max-w-[400px]">
+        <Tabs defaultValue="actuelle" className="max-w-[600px]">
           <TabsList>
             <TabsTrigger value="actuelle">Saison Actuelle</TabsTrigger>
             <TabsTrigger value="carrière">Carrière</TabsTrigger>
@@ -62,6 +62,9 @@ export default function page() {
                       <TableHead className="text-[#000c3b]">Parties jouées</TableHead>
                       <TableHead className="text-[#000c3b]">Victoires</TableHead>
                       <TableHead className="text-[#000c3b]">Défaites</TableHead>
+                      <TableHead className="text-[#000c3b]">Buts</TableHead>
+                      <TableHead className="text-[#000c3b]">Passes</TableHead>
+                      <TableHead className="text-[#000c3b]">Points</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -69,6 +72,9 @@ export default function page() {
                       <TableCell>7</TableCell>
                       <TableCell>4</TableCell>
                       <TableCell>3</TableCell>
+                      <TableCell>1</TableCell>
+                      <TableCell>5</TableCell>
+                      <TableCell>6</TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
@@ -84,9 +90,12 @@ export default function page() {
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="text-[#000c3b]">Parties jouées</TableHead>
+                    <TableHead className="text-[#000c3b]">Parties jouées</TableHead>
                       <TableHead className="text-[#000c3b]">Victoires</TableHead>
                       <TableHead className="text-[#000c3b]">Défaites</TableHead>
+                      <TableHead className="text-[#000c3b]">Buts</TableHead>
+                      <TableHead className="text-[#000c3b]">Passes</TableHead>
+                      <TableHead className="text-[#000c3b]">Points</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -94,6 +103,9 @@ export default function page() {
                       <TableCell>84</TableCell>
                       <TableCell>60</TableCell>
                       <TableCell>24</TableCell>
+                      <TableCell>32</TableCell>
+                      <TableCell>11</TableCell>
+                      <TableCell>43</TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>

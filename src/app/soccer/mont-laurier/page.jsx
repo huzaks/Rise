@@ -40,7 +40,7 @@ export default function page() {
       </div>
       <div className="pl-4 pt-4 md:pt-0 w-fit">
         <Link
-          href={"/hockey"}
+          href={"/soccer"}
           className="group flex gap-4 bg-transparent hover:bg-[#00061d] border-4 border-[#00061d] text-[#00061d] hover:text-white rounded-[50px] py-2 px-4 text-md font-bold items-center justify-center transition-all "
         >
           <FiArrowLeft className=" text-[#00061d] text-lg group-hover:text-white transition-all" />

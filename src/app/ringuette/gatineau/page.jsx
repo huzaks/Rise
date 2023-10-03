@@ -21,7 +21,7 @@ export default function page() {
     <div className="flex flex-col w-full gap-10 min-h-[100vh] mt-28 md:mt-0">
       <div className="hidden md:flex justify-between items-center h-32 w-full bg-[#000c3b]">
         <h1 className="text-xl md:text-3xl font-bold text-white pl-6">
-          Soccer - Cantley
+        Ringuette - Gatineau
         </h1>
         <div className="flex h-[52px] w-96 border-4 border-[#000c3b] rounded-[50px] mr-2">
           <div className="relative w-full h-full align-middle">
@@ -40,7 +40,7 @@ export default function page() {
       </div>
       <div className="pl-4 pt-4 md:pt-0 w-fit">
         <Link
-          href={"/soccer"}
+          href={"/ringuette"}
           className="group flex gap-4 bg-transparent hover:bg-[#00061d] border-4 border-[#00061d] text-[#00061d] hover:text-white rounded-[50px] py-2 px-4 text-md font-bold items-center justify-center transition-all "
         >
           <FiArrowLeft className=" text-[#00061d] text-lg group-hover:text-white transition-all" />
@@ -48,7 +48,7 @@ export default function page() {
         </Link>
       </div>
       <h2 className="text-4xl font-bold text-center md:pb-12 ">
-        Catégories Soccer - Cantley
+        Catégories Ringuette - Gatineau
       </h2>
       <div className="flex justify-center md:hidden h-[52px] w-full bg-transparent">
         <div className="flex h-[52px] max-w-sm border-4 border-[#000c3b] rounded-[50px] mr-2">
@@ -69,67 +69,46 @@ export default function page() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 p-4">
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-            U09
+            U8
           </h3>
           <Accordion type="single" collapsible>
-            <AccordionItem value="u9-1">
+            <AccordionItem value="u8-1">
               <div>
-                <AccordionTrigger className="text-lg">Division 1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Moustique 1</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Groupe 1
                     </Link>
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Vert
+                      Groupe 2
                     </Link>
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
-            <AccordionItem value="u9-2">
+            <AccordionItem value="u8-2">
               <div>
-                <AccordionTrigger className="text-lg">Division 2</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Moustique 2</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
-                    <Link
+                  <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Groupe 1
                     </Link>
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Vert
-                    </Link>
-                  </div>
-                </AccordionContent>
-              </div>
-            </AccordionItem>
-            <AccordionItem value="u9-3">
-              <div>
-                <AccordionTrigger className="text-lg">Division 3</AccordionTrigger>
-                <AccordionContent>
-                  <div className="grid grid-cols-2">
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Jaune
-                    </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
+                      Groupe 2
                     </Link>
                   </div>
                 </AccordionContent>
@@ -139,68 +118,53 @@ export default function page() {
         </div>
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-            U11
+            U10
           </h3>
           <Accordion type="single" collapsible>
             <AccordionItem value="u11-1">
               <div>
-                <AccordionTrigger className="text-lg">Division 1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Novice A</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Leclair
                     </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
-                    </Link>
+                    
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u11-2">
               <div>
-                <AccordionTrigger className="text-lg">Division 2</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Novice B</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Duguay
                     </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
-                    </Link>
+                  
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u11-3">
               <div>
-                <AccordionTrigger className="text-lg">Division 3</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Novice C1</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Rose
                     </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
-                    </Link>
+                    
                   </div>
                 </AccordionContent>
               </div>
@@ -209,68 +173,53 @@ export default function page() {
         </div>
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-            U13
+            U12
           </h3>
           <Accordion type="single" collapsible>
             <AccordionItem value="u13-1">
               <div>
-                <AccordionTrigger className="text-lg">Division 1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Atome A</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Blais
                     </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
-                    </Link>
+                    
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u13-2">
               <div>
-                <AccordionTrigger className="text-lg">Division 2</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Atome B</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Prud&apos;homme
                     </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
-                    </Link>
+                  
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u13-3">
               <div>
-                <AccordionTrigger className="text-lg">Division 3</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Atome C1</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Casey
                     </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
-                    </Link>
+      
                   </div>
                 </AccordionContent>
               </div>
@@ -279,46 +228,35 @@ export default function page() {
         </div>
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-            U15
+            U14
           </h3>
           <Accordion type="single" collapsible>
             <AccordionItem value="u15-1">
               <div>
-                <AccordionTrigger className="text-lg">Division 1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Benjamin A</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
+                      Matte
                     </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
-                    </Link>
+
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u15-2">
               <div>
-                <AccordionTrigger className="text-lg">Division 2</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Benjamin B</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Atomique Jaune
-                    </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Atomique Vert
+                      Fleury
                     </Link>
                   </div>
                 </AccordionContent>
@@ -326,46 +264,116 @@ export default function page() {
             </AccordionItem>
             <AccordionItem value="u15-AA">
               <div>
-                <AccordionTrigger className="text-lg">AA</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Benjamin C1</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Jaune
+                      Poupart
                     </Link>
-                    <Link
-                      href={"/stats-equipe"}
-                      className="font-semibold hover:font-bold w-fit"
-                    >
-                      Vert
-                    </Link>
+                    
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
-            <AccordionItem value="u15-AAA">
+            
+          </Accordion>
+        </div>
+        <div>
+          <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
+            U16
+          </h3>
+          <Accordion type="single" collapsible>
+            <AccordionItem value="u16-1">
               <div>
-                <AccordionTrigger className="text-lg">AAA</AccordionTrigger>
+                <AccordionTrigger className="text-lg">Junior A</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Jaune
+                      Lortie
                     </Link>
+
+                  </div>
+                </AccordionContent>
+              </div>
+            </AccordionItem>
+            <AccordionItem value="u16-2">
+              <div>
+                <AccordionTrigger className="text-lg">Junior B1</AccordionTrigger>
+                <AccordionContent>
+                  <div className="grid grid-cols-2">
                     <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
-                      Vert
+                      Saumure
                     </Link>
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
+            <AccordionItem value="u16-AA">
+              <div>
+                <AccordionTrigger className="text-lg">Junior B2</AccordionTrigger>
+                <AccordionContent>
+                  <div className="grid grid-cols-2">
+                    <Link
+                      href={"/stats-equipe"}
+                      className="font-semibold hover:font-bold w-fit"
+                    >
+                      Gaumond
+                    </Link>
+                    
+                  </div>
+                </AccordionContent>
+              </div>
+            </AccordionItem>
+            
+          </Accordion>
+        </div>
+        <div>
+          <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
+            U19
+          </h3>
+          <Accordion type="single" collapsible>
+            <AccordionItem value="u17-1">
+              <div>
+                <AccordionTrigger className="text-lg">Cadette A</AccordionTrigger>
+                <AccordionContent>
+                  <div className="grid grid-cols-2">
+                    <Link
+                      href={"/stats-equipe"}
+                      className="font-semibold hover:font-bold w-fit"
+                    >
+                      PrudHomme
+                    </Link>
+
+                  </div>
+                </AccordionContent>
+              </div>
+            </AccordionItem>
+            <AccordionItem value="u17-2">
+              <div>
+                <AccordionTrigger className="text-lg">Cadette B</AccordionTrigger>
+                <AccordionContent>
+                  <div className="grid grid-cols-2">
+                    <Link
+                      href={"/stats-equipe"}
+                      className="font-semibold hover:font-bold w-fit"
+                    >
+                      Morin
+                    </Link>
+                  </div>
+                </AccordionContent>
+              </div>
+            </AccordionItem>
+          
+            
           </Accordion>
         </div>
         
