@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col mx-auto items-center justify-center w-[90%] max-w-xl gap-16 px-4 lg:flex-row min-h-[100vh]">
+    <div className="flex flex-col mx-auto items-center justify-center w-[90%] max-w-2xl gap-16 px-4 lg:flex-row min-h-[100vh]">
       <div className="flex flex-col order-2 lg:order-1">
         <h1 className="font-bold text-5xl text-transparent bg-gradient-to-l from-[#4a578b] to-[#000c3b] bg-clip-text self-start">
           Bienvenue chez
@@ -20,13 +20,13 @@ export default function Home() {
           <Link
             href={"/ce-que-nous-offrons"}
             className="
-        bg-[#000c3b] hover:bg-[#00061d] border-4 border-[#000c3b] hover:border-[#00061d] text-white rounded-[50px] py-2 px-8 text-xl font-bold items-center justify-center transition-all w-fit"
+        bg-[#000c3b] hover:bg-[#00061d] border-4 border-[#000c3b] hover:border-[#00061d] text-white rounded-[50px] py-2 px-8 text-lg md:text-xl font-bold items-center justify-center transition-all w-fit"
           >
             Plus d&apos;informations!
           </Link>
           <Link
             href={"/"}
-            className="hover:bg-[#000c3b] border-4 border-[#000c3b] text-[#000c3b] hover:text-white rounded-[50px] py-2 px-8 text-xl font-bold items-center justify-center transition-all w-fit"
+            className="hover:bg-[#000c3b] border-4 border-[#000c3b] text-[#000c3b] hover:text-white rounded-[50px] py-2 px-8 text-lg text-center md:text-xl font-bold items-center justify-center transition-all w-fit"
           >
             J&apos;embarque dans l&apos;aventure!
           </Link>
