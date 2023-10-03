@@ -1,15 +1,12 @@
 "use client";
-import { buttonVariants } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiArrowLeft } from "react-icons/fi";

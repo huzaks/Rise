@@ -1,15 +1,14 @@
 "use client";
 
-import Head from "next/head";
+import logo from "@/app/rise_logo_white-2.png";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/app/rise_logo_white-2.png";
-import { HiOutlineMenuAlt1 } from "react-icons/hi";
-import { GiHockey, GiSoccerBall, GiRing } from "react-icons/gi";
-import { IoHome } from "react-icons/io5";
+import { CgNotes } from "react-icons/cg";
+import { FaBaseballBatBall } from "react-icons/fa6";
 import { FiSettings } from "react-icons/fi";
-import {FaRing, FaBaseballBatBall} from 'react-icons/fa6'
-import {CgNotes} from 'react-icons/cg'
+import { GiHockey, GiRing, GiSoccerBall } from "react-icons/gi";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import { IoHome } from "react-icons/io5";
 
 import {
   DropdownMenu,
@@ -35,9 +34,9 @@ export default function MenuMD() {
         <DropdownMenuContent align="end">
           <DropdownMenuLabel>Général</DropdownMenuLabel>
           <DropdownMenuItem>
-          <Link
+            <Link
               href={"/"}
-              className='font-semibold flex gap-2 items-center text-[#000c3b] '
+              className="font-semibold flex gap-2 items-center text-[#000c3b] "
             >
               <IoHome />
               Accueil
@@ -48,34 +47,34 @@ export default function MenuMD() {
           <DropdownMenuItem>
             <Link
               href={"/hockey"}
-              className='font-semibold flex gap-2 items-center text-[#000c3b] '
+              className="font-semibold flex gap-2 items-center text-[#000c3b] "
             >
               <GiHockey />
               Hockey
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-          <Link
+            <Link
               href={"/soccer"}
-              className='font-semibold  flex gap-2 items-center text-[#000c3b] '
+              className="font-semibold  flex gap-2 items-center text-[#000c3b] "
             >
               <GiSoccerBall />
               Soccer
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-          <Link
+            <Link
               href={"/baseball"}
-              className='font-semibold  flex gap-2 items-center text-[#000c3b] '
+              className="font-semibold  flex gap-2 items-center text-[#000c3b] "
             >
               <FaBaseballBatBall />
               Baseball
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-          <Link
+            <Link
               href={"/ringuette"}
-              className='font-semibold  flex gap-2 items-center text-[#000c3b] '
+              className="font-semibold  flex gap-2 items-center text-[#000c3b] "
             >
               <GiRing />
               Ringuette
@@ -84,18 +83,18 @@ export default function MenuMD() {
           <DropdownMenuSeparator />
           <DropdownMenuLabel>Personnel</DropdownMenuLabel>
           <DropdownMenuItem>
-          <Link
+            <Link
               href={"/assurances"}
-              className='font-semibold  flex gap-2 items-center text-[#000c3b] '
+              className="font-semibold  flex gap-2 items-center text-[#000c3b] "
             >
               <CgNotes />
               Assurances
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-          <Link
+            <Link
               href={"/reglages"}
-              className='font-semibold  flex gap-2 items-center text-[#000c3b] '
+              className="font-semibold  flex gap-2 items-center text-[#000c3b] "
             >
               <FiSettings />
               Réglages

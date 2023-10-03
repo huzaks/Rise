@@ -1,17 +1,6 @@
+import logo from "@/app/rise_logo_black-blue-2.png";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/app/rise_logo_black-blue-2.png";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
 
 export default function Home() {
   return (
@@ -28,18 +17,19 @@ export default function Home() {
           Statistiques • Parties en direct • Assurances
         </p>
         <div className="flex gap-4 flex-col md:flex-row">
-        <Link href={"/ce-que-nous-offrons"} className="
-        bg-[#000c3b] hover:bg-[#00061d] border-4 border-[#000c3b] hover:border-[#00061d] text-white rounded-[50px] py-2 px-8 text-xl font-bold items-center justify-center transition-all w-fit">
-                Ce que nous offrons
-              </Link>
+          <Link
+            href={"/ce-que-nous-offrons"}
+            className="
+        bg-[#000c3b] hover:bg-[#00061d] border-4 border-[#000c3b] hover:border-[#00061d] text-white rounded-[50px] py-2 px-8 text-xl font-bold items-center justify-center transition-all w-fit"
+          >
+            Ce que nous offrons
+          </Link>
           <Link
             href={"/"}
             className="hover:bg-[#000c3b] border-4 border-[#000c3b] text-[#000c3b] hover:text-white rounded-[50px] py-2 px-8 text-xl font-bold items-center justify-center transition-all w-fit"
           >
             Mode de paiement
           </Link>
-          
-          
         </div>
       </div>
     </div>

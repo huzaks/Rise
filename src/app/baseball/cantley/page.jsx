@@ -111,12 +111,11 @@ export default function page() {
                 </AccordionContent>
               </div>
             </AccordionItem>
-            
           </Accordion>
         </div>
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-          11U (Moustique)
+            11U (Moustique)
           </h3>
           <Accordion type="single" collapsible>
             <AccordionItem value="u11-1">
@@ -161,12 +160,11 @@ export default function page() {
                 </AccordionContent>
               </div>
             </AccordionItem>
-            
           </Accordion>
         </div>
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-          13U (PeeWee)
+            13U (PeeWee)
           </h3>
           <Accordion type="single" collapsible>
             <AccordionItem value="u13-1">
@@ -211,12 +209,11 @@ export default function page() {
                 </AccordionContent>
               </div>
             </AccordionItem>
-            
           </Accordion>
         </div>
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-          15U (Bantam)
+            15U (Bantam)
           </h3>
           <Accordion type="single" collapsible>
             <AccordionItem value="u15-1">
@@ -261,13 +258,11 @@ export default function page() {
                 </AccordionContent>
               </div>
             </AccordionItem>
-            
-            
           </Accordion>
         </div>
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-          18U (Midget)
+            18U (Midget)
           </h3>
           <Accordion type="single" collapsible>
             <AccordionItem value="u18-1">
@@ -312,13 +307,11 @@ export default function page() {
                 </AccordionContent>
               </div>
             </AccordionItem>
-            
-            
           </Accordion>
         </div>
         <div>
           <h3 className="flex flex-col text-xl font-bold after:content-[''] after:w-12 after:bg-[#000c3b] after:rounded-md after:px-1 after:py-[2px]">
-         Junior
+            Junior
           </h3>
           <Accordion type="single" collapsible>
             <AccordionItem value="Junior-1">
@@ -342,12 +335,8 @@ export default function page() {
                 </AccordionContent>
               </div>
             </AccordionItem>
-            
-            
           </Accordion>
         </div>
-        
-        
       </div>
     </div>
   );

@@ -1,12 +1,11 @@
-import MenuMD from '@/components/MenuMD'
-import Sidebar from '@/components/Sidebar'
-import '@/styles/globals.css'
-
+import MenuMD from "@/components/MenuMD";
+import Sidebar from "@/components/Sidebar";
+import "@/styles/globals.css";
 
 export const metadata = {
-  title: 'Rise',
-  description: 'Notre application',
-}
+  title: "Rise",
+  description: "Notre application",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -15,7 +14,7 @@ export default function RootLayout({ children }) {
         <MenuMD />
         <Sidebar />
         {children}
-        </body>
+      </body>
     </html>
-  )
+  );
 }

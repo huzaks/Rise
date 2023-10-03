@@ -1,40 +1,30 @@
-import Head from "next/head";
-import Image from "next/image";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { FiArrowLeft } from "react-icons/fi";
 export default function page() {
   return (
     <div className="w-full min-h-[100vh] max-w-3xl pt-32">
       <div className="flex p-4 flex-col gap-8">
-      <div className="w-fit">
-        <Link
-          href={"/hockey"}
-          className="group flex gap-4 text-[#00061d] text-md font-bold items-center justify-center transition-all hover:underline"
-        >
-          <FiArrowLeft className=" text-[#00061d] text-lg" />
-          Retour
-        </Link>
-      </div>
+        <div className="w-fit">
+          <Link
+            href={"/hockey"}
+            className="group flex gap-4 text-[#00061d] text-md font-bold items-center justify-center transition-all hover:underline"
+          >
+            <FiArrowLeft className=" text-[#00061d] text-lg" />
+            Retour
+          </Link>
+        </div>
         <div className="flex flex-col gap-4">
           <div className="flex gap-4 items-center text-4xl font-bold">
             <h1>Marc Gratton</h1>
@@ -43,7 +33,6 @@ export default function page() {
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          
         </div>
         <Tabs defaultValue="actuelle" className="max-w-[600px]">
           <TabsList>
@@ -59,8 +48,12 @@ export default function page() {
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="text-[#000c3b]">Parties jouées</TableHead>
-                      <TableHead className="text-[#000c3b]">Victoires</TableHead>
+                      <TableHead className="text-[#000c3b]">
+                        Parties jouées
+                      </TableHead>
+                      <TableHead className="text-[#000c3b]">
+                        Victoires
+                      </TableHead>
                       <TableHead className="text-[#000c3b]">Défaites</TableHead>
                       <TableHead className="text-[#000c3b]">Buts</TableHead>
                       <TableHead className="text-[#000c3b]">Passes</TableHead>
@@ -90,8 +83,12 @@ export default function page() {
                 <Table>
                   <TableHeader>
                     <TableRow>
-                    <TableHead className="text-[#000c3b]">Parties jouées</TableHead>
-                      <TableHead className="text-[#000c3b]">Victoires</TableHead>
+                      <TableHead className="text-[#000c3b]">
+                        Parties jouées
+                      </TableHead>
+                      <TableHead className="text-[#000c3b]">
+                        Victoires
+                      </TableHead>
                       <TableHead className="text-[#000c3b]">Défaites</TableHead>
                       <TableHead className="text-[#000c3b]">Buts</TableHead>
                       <TableHead className="text-[#000c3b]">Passes</TableHead>

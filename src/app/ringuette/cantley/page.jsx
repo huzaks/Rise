@@ -1,15 +1,12 @@
 "use client";
-import { buttonVariants } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiArrowLeft } from "react-icons/fi";
@@ -74,7 +71,9 @@ export default function page() {
           <Accordion type="single" collapsible>
             <AccordionItem value="u8-1">
               <div>
-                <AccordionTrigger className="text-lg">Moustique 1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Moustique 1
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -95,10 +94,12 @@ export default function page() {
             </AccordionItem>
             <AccordionItem value="u8-2">
               <div>
-                <AccordionTrigger className="text-lg">Moustique 2</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Moustique 2
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
-                  <Link
+                    <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
@@ -123,7 +124,9 @@ export default function page() {
           <Accordion type="single" collapsible>
             <AccordionItem value="u11-1">
               <div>
-                <AccordionTrigger className="text-lg">Novice A</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Novice A
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -132,14 +135,15 @@ export default function page() {
                     >
                       Leclair
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u11-2">
               <div>
-                <AccordionTrigger className="text-lg">Novice B</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Novice B
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -148,14 +152,15 @@ export default function page() {
                     >
                       Duguay
                     </Link>
-                  
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u11-3">
               <div>
-                <AccordionTrigger className="text-lg">Novice C1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Novice C1
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -164,7 +169,6 @@ export default function page() {
                     >
                       Rose
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
@@ -187,7 +191,6 @@ export default function page() {
                     >
                       Blais
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
@@ -203,14 +206,15 @@ export default function page() {
                     >
                       Prud&apos;homme
                     </Link>
-                  
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u13-3">
               <div>
-                <AccordionTrigger className="text-lg">Atome C1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Atome C1
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -219,7 +223,6 @@ export default function page() {
                     >
                       Casey
                     </Link>
-      
                   </div>
                 </AccordionContent>
               </div>
@@ -233,7 +236,9 @@ export default function page() {
           <Accordion type="single" collapsible>
             <AccordionItem value="u15-1">
               <div>
-                <AccordionTrigger className="text-lg">Benjamin A</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Benjamin A
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -242,14 +247,15 @@ export default function page() {
                     >
                       Matte
                     </Link>
-
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u15-2">
               <div>
-                <AccordionTrigger className="text-lg">Benjamin B</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Benjamin B
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -264,7 +270,9 @@ export default function page() {
             </AccordionItem>
             <AccordionItem value="u15-AA">
               <div>
-                <AccordionTrigger className="text-lg">Benjamin C1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Benjamin C1
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -273,12 +281,10 @@ export default function page() {
                     >
                       Poupart
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
-            
           </Accordion>
         </div>
         <div>
@@ -288,7 +294,9 @@ export default function page() {
           <Accordion type="single" collapsible>
             <AccordionItem value="u16-1">
               <div>
-                <AccordionTrigger className="text-lg">Junior A</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Junior A
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -297,14 +305,15 @@ export default function page() {
                     >
                       Lortie
                     </Link>
-
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u16-2">
               <div>
-                <AccordionTrigger className="text-lg">Junior B1</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Junior B1
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -319,7 +328,9 @@ export default function page() {
             </AccordionItem>
             <AccordionItem value="u16-AA">
               <div>
-                <AccordionTrigger className="text-lg">Junior B2</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Junior B2
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -328,12 +339,10 @@ export default function page() {
                     >
                       Gaumond
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
-            
           </Accordion>
         </div>
         <div>
@@ -343,7 +352,9 @@ export default function page() {
           <Accordion type="single" collapsible>
             <AccordionItem value="u17-1">
               <div>
-                <AccordionTrigger className="text-lg">Cadette A</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Cadette A
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -352,14 +363,15 @@ export default function page() {
                     >
                       PrudHomme
                     </Link>
-
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
             <AccordionItem value="u17-2">
               <div>
-                <AccordionTrigger className="text-lg">Cadette B</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  Cadette B
+                </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
                     <Link
@@ -372,12 +384,8 @@ export default function page() {
                 </AccordionContent>
               </div>
             </AccordionItem>
-          
-            
           </Accordion>
         </div>
-        
-        
       </div>
     </div>
   );

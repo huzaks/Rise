@@ -1,12 +1,11 @@
 "use client";
 
-import Head from "next/head";
+import baseballBG from "@/app/baseballBG.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiArrowRight } from "react-icons/fi";
-import baseballBG from "@/app/baseballBG.jpg";
 
 export default function page() {
   const reg = [
@@ -77,28 +76,28 @@ export default function page() {
         </div>
       </div>
       <div className="md:hidden block z-20 p-4">
-          <h2 className="z-20 text-4xl font-bold text-center">
-            Sélectionnez votre région
-          </h2>
-          <div className="mx-auto flex flex-col gap-4 max-w-[400px] mt-4 ">
-            {reg
-              .filter((item) => {
-                return search.toLowerCase() === ""
-                  ? item
-                  : item.region.toLowerCase().includes(search.toLowerCase());
-              })
-              .map((item, i) => (
-                <Link
-                  key={i}
-                  href={`/baseball/${item.region.toLowerCase()}`}
-                  className="group relative flex gap-4 bg-white/80 hover:bg-[#00061d] border-4 border-[#00061d] text-[#00061d] hover:text-white rounded-[50px] py-4 px-1 text-xl font-bold items-center justify-center transition-all "
-                >
-                  {item.region}
-                  <FiArrowRight className="absolute right-12 translate-x-[50%] text-white opacity-0 group-hover:opacity-100 group-hover:translate-x-[100%] transition-all" />
-                </Link>
-              ))}
-          </div>
+        <h2 className="z-20 text-4xl font-bold text-center">
+          Sélectionnez votre région
+        </h2>
+        <div className="mx-auto flex flex-col gap-4 max-w-[400px] mt-4 ">
+          {reg
+            .filter((item) => {
+              return search.toLowerCase() === ""
+                ? item
+                : item.region.toLowerCase().includes(search.toLowerCase());
+            })
+            .map((item, i) => (
+              <Link
+                key={i}
+                href={`/baseball/${item.region.toLowerCase()}`}
+                className="group relative flex gap-4 bg-white/80 hover:bg-[#00061d] border-4 border-[#00061d] text-[#00061d] hover:text-white rounded-[50px] py-4 px-1 text-xl font-bold items-center justify-center transition-all "
+              >
+                {item.region}
+                <FiArrowRight className="absolute right-12 translate-x-[50%] text-white opacity-0 group-hover:opacity-100 group-hover:translate-x-[100%] transition-all" />
+              </Link>
+            ))}
         </div>
+      </div>
     </div>
   );
 }

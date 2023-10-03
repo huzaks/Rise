@@ -1,15 +1,12 @@
 "use client";
-import { buttonVariants } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiArrowLeft } from "react-icons/fi";
@@ -144,7 +141,7 @@ export default function page() {
                 <AccordionTrigger className="text-lg">2</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
-                  <Link
+                    <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
@@ -192,7 +189,7 @@ export default function page() {
                 <AccordionTrigger className="text-lg">4</AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-2">
-                  <Link
+                    <Link
                       href={"/stats-equipe"}
                       className="font-semibold hover:font-bold w-fit"
                     >
@@ -260,7 +257,6 @@ export default function page() {
                     >
                       Loups
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
@@ -276,7 +272,6 @@ export default function page() {
                     >
                       Loups
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
@@ -361,7 +356,6 @@ export default function page() {
                     >
                       Loups
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
@@ -404,7 +398,6 @@ export default function page() {
                     >
                       Loups
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
@@ -426,7 +419,6 @@ export default function page() {
                     >
                       Loups
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
@@ -463,7 +455,6 @@ export default function page() {
                     >
                       Loups
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
@@ -479,14 +470,12 @@ export default function page() {
                     >
                       Loups
                     </Link>
-                    
                   </div>
                 </AccordionContent>
               </div>
             </AccordionItem>
           </Accordion>
         </div>
-        
       </div>
     </div>
   );
