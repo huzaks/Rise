@@ -28,7 +28,7 @@ export default function Home() {
             href={"/"}
             className="hover:bg-[#000c3b] border-4 border-[#000c3b] text-[#000c3b] hover:text-white rounded-[50px] py-2 px-8 text-xl font-bold items-center justify-center transition-all w-fit"
           >
-            Mode de paiement
+            J&apos;embarque dans l&apos;aventure!
           </Link>
         </div>
       </div>
