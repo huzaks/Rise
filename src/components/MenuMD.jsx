@@ -1,6 +1,6 @@
 "use client";
 
-import logo from "@/app/rise_logo_white-2.png";
+import logo from "@/app/rise_logo_white-v3.png";
 import Image from "next/image";
 import Link from "next/link";
 import { CgNotes } from "react-icons/cg";

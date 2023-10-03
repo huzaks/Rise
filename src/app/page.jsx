@@ -1,4 +1,4 @@
-import logo from "@/app/rise_logo_black-blue-2.png";
+import logo from "@/app/rise_logo_black-blue-v3.png";
 import Image from "next/image";
 import Link from "next/link";
 
