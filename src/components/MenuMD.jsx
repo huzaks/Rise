@@ -25,7 +25,9 @@ export default function MenuMD() {
 
   return (
     <div className="flex md:hidden fixed top-0 w-full bg-[#000c3b] h-28 p-4 z-30 items-center justify-between">
+      <Link href={'/'}>
       <Image src={logo} alt="Logo R.I.S.E." className="w-40" />
+      </Link>
       <DropdownMenu>
         <DropdownMenuTrigger>
           <HiOutlineMenuAlt1 className="text-white w-8 h-8" />
