@@ -22,7 +22,7 @@ export default function Home() {
             className="
         bg-[#000c3b] hover:bg-[#00061d] border-4 border-[#000c3b] hover:border-[#00061d] text-white rounded-[50px] py-2 px-8 text-xl font-bold items-center justify-center transition-all w-fit"
           >
-            Ce que nous offrons
+            Plus d&apos;informations!
           </Link>
           <Link
             href={"/"}
