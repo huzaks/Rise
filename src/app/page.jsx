@@ -11,7 +11,7 @@ export default function Home() {
         </h1>
         <Image src={logo} alt="logo rise black-blue" />
         <p className="text-lg font-bold text-[#000c3b] py-4">
-          Réseau Interprovincial des Sports en Évolution.
+          Réseau Interprovincial des Sports en Évolution
         </p>
         <p className="text-lg font-bold text-[#293b83] py-4">
           Statistiques • Parties en direct • Assurances
